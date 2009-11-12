@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block feature %}
 <div id="feature">
-  <div class="width">
+  <div id="width">
     <h1>Notify.io is your global web notification system.</h1>
     <h2>Real-time notifications of events from the web, under your control.</h2>
-    
+      
     <img id="video" src="/static/video.png" />
     <h4>You get pushed notifications</h4>
     <ul>
@@ -19,6 +19,7 @@
       <li><span>Hashed email-based user lookup</span></li>
     </ul>
     <a class="button" id="learnmore" href="http://groups.google.com/group/notify-io/web/developers">Learn More</a>
+    <div style="float: right; margin-top: 0px; margin-right: 10px; font-size: smaller; padding-top:10px; " class="notyet">* Not yet actually implemented. Pre-alpha!</div>
   </div>
 </div>
 {% endblock %}
@@ -26,7 +27,7 @@
 <div id="main">
   <div class="col1">
     <h4>Supported Notifiers</h4>
-    <small>We're still in pre-alpha. This is our expected list.<br/> Currently implemented are in bold.</small>  
+    <small>We're still in pre-alpha. This is our expected list.<br/> Currently implemented are in bold.</small>
     <ul style="margin-top: 10px;">
       <li><span>OS X: <strong>Growl</strong></span></li>
       <li><span>Windows: Growl for Windows, Snarl</span></li>
@@ -81,7 +82,8 @@
       }
     }).render().setUser('notifyio').start();
     </script>
+    <div class="twtr-widget twtr-widget-profile" id="twtr-widget-1"><div class="twtr-doc" style="width: 250px;">            <div class="twtr-hd"><a target="_blank" href="http://twitter.com/notifyio" class="twtr-profile-img-anchor"><img alt="profile" class="twtr-profile-img" src="notify.io_files/notifyio-icon_normal.png"></a>                      <h3>notify.io</h3>                      <h4><a target="_blank" href="http://twitter.com/notifyio">notifyio</a></h4>               <div class="twtr-spinner twtr-inactive"></div>            </div>            <div class="twtr-bd">              <div class="twtr-timeline" style="height: auto;">                <div class="twtr-tweets">                  <div class="twtr-reference-tweet"></div><div class="twtr-tweet" id="tweet-id-3"><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="http://twitter.com/notifyio"><img alt="notifyio profile" src="notify.io_files/notifyio-icon_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="http://twitter.com/notifyio" class="twtr-user">notifyio</a> "tynio" is the start of support for libnotify and others: <a class="twtr-hyperlink" target="_blank" href="http://github.com/novas0x2a/tynio">http://github.com/novas0...</a> /by @<a target="_blank" class="twtr-atreply" href="http://twitter.com/novas0x2a">novas0x2a</a>             <i>            <a target="_blank" href="http://twitter.com/notifyio/status/5607002730">2 hours ago</a>             <a target="_blank" class="twtr-reply" href="http://twitter.com/?status=@notifyio%20&amp;in_reply_to_status_id=5607002730&amp;in_reply_to=notifyio">reply</a>             </i>           </p>         </div>       </div></div><div class="twtr-tweet" id="tweet-id-2"><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="http://twitter.com/notifyio"><img alt="notifyio profile" src="notify.io_files/notifyio-icon_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="http://twitter.com/notifyio" class="twtr-user">notifyio</a> An introduction to notify.io in a blog post by @<a target="_blank" class="twtr-atreply" href="http://twitter.com/progrium">progrium</a>: <a class="twtr-hyperlink" target="_blank" href="http://j.mp/35BIx3">http://j.mp/35BIx3</a>             <i>            <a target="_blank" href="http://twitter.com/notifyio/status/5568002811">yesterday</a>             <a target="_blank" class="twtr-reply" href="http://twitter.com/?status=@notifyio%20&amp;in_reply_to_status_id=5568002811&amp;in_reply_to=notifyio">reply</a>             </i>           </p>         </div>       </div></div><div class="twtr-tweet" id="tweet-id-1"><div class="twtr-tweet-wrap">         <div class="twtr-avatar">           <div class="twtr-img"><a target="_blank" href="http://twitter.com/notifyio"><img alt="notifyio profile" src="notify.io_files/notifyio-icon_normal.png"></a></div>         </div>         <div class="twtr-tweet-text">           <p>             <a target="_blank" href="http://twitter.com/notifyio" class="twtr-user">notifyio</a> A photo of us hacking on notify.io stuff at SHDH: <a class="twtr-hyperlink" target="_blank" href="http://j.mp/3gBxZc">http://j.mp/3gBxZc</a> @<a target="_blank" class="twtr-atreply" href="http://twitter.com/_abi_">_abi_</a> @<a target="_blank" class="twtr-atreply" href="http://twitter.com/progrium">progrium</a> @<a target="_blank" class="twtr-atreply" href="http://twitter.com/dreid">dreid</a> @<a target="_blank" class="twtr-atreply" href="http://twitter.com/novas0x2a">novas0x2a</a> @<a target="_blank" class="twtr-atreply" href="http://twitter.com/commanda">commanda</a> and friends             <i>            <a target="_blank" href="http://twitter.com/notifyio/status/5548523228">2 days ago</a>             <a target="_blank" class="twtr-reply" href="http://twitter.com/?status=@notifyio%20&amp;in_reply_to_status_id=5548523228&amp;in_reply_to=notifyio">reply</a>             </i>           </p>         </div>       </div></div>                  <!-- tweets show here -->                </div>              </div>            </div>            <div class="twtr-ft">              <div><a target="_blank" href="http://twitter.com/"><img alt="" src="notify.io_files/twitter_logo_s.png" height="15"></a>                <span><a target="_blank" class="twtr-join-conv" style="color: rgb(48, 48, 48);" href="http://twitter.com/notifyio">Join the conversation</a></span>              </div>            </div>          </div></div>
   </div>
-  <div style="float: right; margin-top: -40px; margin-right: 10px; font-size: smaller;" class="notyet">* = Not yet actually implemented. Pre-alpha!</div>
+  
 </div>
 {% endblock %}

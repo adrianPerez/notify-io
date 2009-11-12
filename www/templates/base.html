@@ -6,8 +6,8 @@
   <body>
     <div id="wrapper">
       <div id="header">
-        <div class="width">
-          <a href="/"><img src="/static/notifyio-alpha.png" /></a>
+        <div id="width">
+          <a href="/"><img src="/static/notifyio-alpha.jpg" /></a>
           <div id="account">
             {% if user %}
             {{ user.nickname }} | <a href="{{ logout_url }}">Logout</a>
@@ -19,13 +19,13 @@
       </div>
       {% block feature %}{% endblock %}
       <div id="content" class="{% block content_class %}{% endblock %}">
-        <div class="width">
+        <div id="width">
           
           {% block content %}{% endblock %}
         </div>
       </div>
       <div id="footer">
-        <div class="width">
+        <div id="width">
           <ul style="float: left;">
             <li><span><a href="/getstarted">Get Started</a></span></li>
             <li><span><a href="http://groups.google.com/group/notify-io/web/developers">Developers</a></span></li>
